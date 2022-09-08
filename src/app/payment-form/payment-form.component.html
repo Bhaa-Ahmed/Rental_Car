@@ -1,6 +1,6 @@
 <div class="methods row mt-5 mb-2">
-  <p class="col-5 text-end">Payment Method</p>
-  <div class="brands p-0 col-7">
+  <p class="col-12 col-sm-5 text-sm-end">Payment Method</p>
+  <div class="brands p-0 col-12 col-sm-7">
     <img class="img-fluid me-2" src="./../../assets/visa logo.png" alt="visa" />
     <img src="./../../assets/master card logo.png" alt="master-card" />
     <p class="mb-1">We accept all major payment types</p>
@@ -8,30 +8,30 @@
 </div>
 <form [formGroup]="paymentForm">
   <div class="row mb-3">
-    <label class="form-label col-5 text-end mt-2" for=""
+    <label class="form-label col-sm-5 text-sm-end mt-2" for=""
       >*&nbsp;Name on Card</label
     >
     <input
-      class="form-control name-input col-7"
+      class="form-control name-input col-sm-7"
       type="text"
       formControlName="name"
     />
   </div>
   <div class="row mb-3">
-    <label class="form-label col-5 text-end mt-2" for=""
+    <label class="form-label col-sm-5 text-sm-end mt-2" for=""
       >*&nbsp;Card Number</label
     >
     <input
-      class="form-control name-input col-7"
+      class="form-control name-input col-sm-7"
       type="number"
       formControlName="cardNumber"
     />
   </div>
   <div class="row mb-3">
-    <label class="form-label col-5 text-end mt-2" for=""
+    <label class="form-label col-sm-5 text-sm-end mt-2" for=""
       >*&nbsp;Expiry Date (mm/yy)</label
     >
-    <div class="col-7 p-0 d-flex">
+    <div class="col-sm-7 p-0 d-flex">
       <select class="form-select expiry-input me-3" formArrayName="expiryDate">
         <option value=""></option>
         <option value="01">01</option>
@@ -64,11 +64,11 @@
     </div>
   </div>
   <div class="row mb-3">
-    <label class="form-label col-5 text-end mt-2" for=""
+    <label class="form-label col-sm-5 text-sm-end mt-2" for=""
       >*&nbsp;Security Number</label
     >
     <input
-      class="form-control security-input col-7"
+      class="form-control security-input col-sm-7"
       type="number"
       formControlName="securityNumber"
     />
