@@ -11,6 +11,7 @@ import { NotificationComponent } from './notification/notification.component';
 import { DriverDetailsComponent } from './driver-details/driver-details.component';
 import { PaymentDetailsComponent } from './payment-details/payment-details.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { TabsComponent } from './tabs/tabs.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     NotificationComponent,
     DriverDetailsComponent,
     PaymentDetailsComponent,
+    TabsComponent,
   ],
   imports: [BrowserModule, ReactiveFormsModule],
   providers: [],

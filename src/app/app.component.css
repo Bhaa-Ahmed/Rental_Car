@@ -7,19 +7,19 @@
 }
 /* Small */
 @media (min-width: 768px) {
-  .container {
+  .contain {
     width: 750px;
   }
 }
 /* Medium */
 @media (min-width: 992px) {
-  .container {
+  .contain {
     width: 970px;
   }
 }
 /* Large */
 @media (min-width: 1200px) {
-  .container {
+  .contain {
     width: 1170px;
   }
 }
@@ -28,4 +28,12 @@
 }
 .contain .column-r {
   width: 835px;
+}
+@media (max-width: 576px) {
+  .contain {
+    width: auto;
+  }
+  .contain .column-r {
+    width: 350px;
+  }
 }

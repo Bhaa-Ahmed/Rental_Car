@@ -3,11 +3,31 @@
   border-radius: 5px;
   padding: 15px;
   margin-bottom: 15px;
+  position: relative;
 }
 .payment-details .title {
   border-bottom: 1px solid #ddd;
   padding-bottom: 6px;
   margin-bottom: 8px;
+}
+.required-fields {
+  position: absolute;
+  top: 63px;
+  right: 13px;
+  width: fit-content;
+  padding: 6px 8px;
+  margin-bottom: 6px;
+  background-color: #e3eed9;
+  font-size: 12px;
+  border-radius: 3px;
+  color: #355832;
+}
+@media (max-width: 576px) {
+  .required-fields {
+    position: absolute;
+    top: 15%;
+    right: 35%;
+  }
 }
 .payment-details .plans {
   background-color: #bee2f7;

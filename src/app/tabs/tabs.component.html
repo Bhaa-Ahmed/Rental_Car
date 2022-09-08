@@ -1,0 +1,68 @@
+<div class="content-body">
+  <ul class="tabs d-flex justify-content-around">
+    <li [ngClass]="{ active: mapActive }" class="map" (click)="activateMap()">
+      <img
+        src="https://cdn2.rcstatic.com/images/site_graphics/newsite/tone/map.svg"
+        alt=""
+      />
+    </li>
+    <li
+      [ngClass]="{ active: hoursActive }"
+      class="time"
+      (click)="activateHours()"
+    >
+      <img
+        src="https://cdn2.rcstatic.com/images/site_graphics/newsite/tone/clock.svg"
+        alt=""
+      />
+    </li>
+  </ul>
+  <div *ngIf="mapActive" class="main-content map">
+    <div class="fw-bold">Location</div>
+    <div class="supplier-location">
+      <a href="#">
+        <img class="img-fluid mb-2" src="./../../assets/map.png" alt="" />
+      </a>
+      <p class="title">Pick Up & Drop Off</p>
+      <div class="location">
+        <strong class="fw-bold">Cairo Airport</strong>
+        <br />
+        Cairo International Airport T3, Arrival Hall Terminal 3, Cairo, Egypt,
+        11844
+      </div>
+    </div>
+  </div>
+  <div *ngIf="hoursActive" class="main-content hours">
+    <div class="fw-bold">Opening hours</div>
+    <ul class="lh-base">
+      <li class="d-flex align-items-center justify-content-between">
+        <div>Monday</div>
+        <div class="fw-bold">9am - 5pm</div>
+      </li>
+      <li class="d-flex align-items-center justify-content-between">
+        <div>Tuesday</div>
+        <div class="fw-bold">9am - 5pm</div>
+      </li>
+      <li class="d-flex align-items-center justify-content-between">
+        <div>Wednesday</div>
+        <div class="fw-bold">9am - 5pm</div>
+      </li>
+      <li class="d-flex align-items-center justify-content-between">
+        <div>Thursday</div>
+        <div class="fw-bold">9am - 5pm</div>
+      </li>
+      <li class="d-flex align-items-center justify-content-between">
+        <div>Friday</div>
+        <div class="fw-bold">closed</div>
+      </li>
+      <li class="d-flex align-items-center justify-content-between">
+        <div>
+          Saturday -
+          <br />
+          Sunday
+        </div>
+        <div class="fw-bold mb-3">9am - 5pm</div>
+      </li>
+    </ul>
+  </div>
+</div>

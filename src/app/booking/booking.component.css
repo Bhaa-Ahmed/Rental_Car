@@ -24,35 +24,56 @@
   color: #888;
 }
 .booking .box-header .car .car-specs {
-  display: none;
   background-color: rgba(255, 255, 255, 0.9);
   position: absolute;
   padding: 0 5px;
-  top: 55px;
-  min-width: 300px;
-  height: 160px;
+  top: 222px;
+  left: 10px;
+  height: 157px;
   font-size: 12px;
   line-height: 18px;
+  transition: 0.7s;
+}
+.car-specs-active {
+  top: 22px !important;
+  transition: 0.7s;
+}
+.booking .box-header .car .car-specs .title {
+  margin: 5px 0;
+}
+.booking .box-header .car .car-specs li {
+  margin-left: 2px;
 }
 .booking .box-header .car .car-specs .trans-air i {
   color: #0f9354;
   font-size: 20px;
+  background: url(https://cdn2.rcstatic.com/images/site_graphics/newsite/tick-sml.png)
+    no-repeat 0 72%;
+  padding: 0 3px 0 10px;
 }
-.booking .box-header .image {
-  height: 165px;
-  min-width: 250px;
+.booking .box-header .car .car-specs .fuel i {
+  background: url(https://cdn2.rcstatic.com/images/site_graphics/newsite/fuel-loc.png)
+    no-repeat scroll -5px -35px;
+  padding: 0 0 0 19px;
+  margin: 3px 0 0 0;
 }
 .booking .box-header .car-footer {
   max-height: 40px;
 }
 .booking .box-header .car-footer img {
+  z-index: 10;
   height: 40px;
 }
-.booking .box-header .car-footer a {
+.booking .box-header .car-footer p {
   font-size: 12px;
-  margin-right: 5px;
+  margin: 5px;
+  color: #106092;
+  border-bottom: 1px solid #106092;
 }
-
+.booking .box-header .car-footer p:hover {
+  cursor: pointer;
+  border: none;
+}
 .booking .box-header .details {
   padding-left: 15px;
   border-left: 1px solid #ddd;
@@ -99,6 +120,7 @@
   border-color: #106092;
   font-size: 12px;
   padding: 4px 8px;
+  line-height: 1;
 }
 .extras-drop-link__arrow {
   transition: transform 0.2s;
@@ -112,6 +134,7 @@
     none;
 }
 .booking .box-header .details .extras .dropdown-content {
+  display: none;
   position: absolute;
   top: 35px;
   left: -35px;
@@ -120,10 +143,16 @@
   border-radius: 3px;
   border: 1px solid;
   border-color: #cccccc #c2c2c2 #b8b8b8;
-  box-shadow: 0 2px 5px rgb(0 0 0 / 26%);
   color: #444;
   padding: 5px 15px 15px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(245, 245, 245);
+  z-index: 10;
+}
+.booking .box-header .details .extras .dropdown:hover .dropdown-content {
+  display: block;
+}
+.booking .box-header .details .extras .dropdown-content p {
+  margin: 2px;
 }
 .booking .box-header .details .extras .dropdown-content::before {
   content: "";
@@ -133,9 +162,10 @@
   height: 0;
   top: -15px;
   right: 175px;
-  border-bottom-color: rgb(255, 255, 255);
+  border-bottom-color: rgb(245, 245, 245);
+  /* box-shadow: 0 2px 5px rgb(0 0 0 / 26%); */
 }
-.booking .box-header .details .extras .dropdown-content::after {
+/* .booking .box-header .details .extras .dropdown-content::after {
   content: "";
   border: 8px solid transparent;
   position: absolute;
@@ -144,7 +174,7 @@
   top: -15px;
   right: 175px;
   border-bottom-color: #c2c2c2;
-}
+} */
 .booking .box-header .details .extras a {
   font-size: 12px;
   margin-right: 5px;

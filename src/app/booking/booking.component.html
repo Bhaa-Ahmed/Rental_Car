@@ -4,10 +4,13 @@
       <div class="row">
         <div class="col-md-4">
           <div class="car">
-            <div class="car-specs">
+            <div
+              [ngClass]="{ 'car-specs-active': carDetailVisibility }"
+              class="car-specs"
+            >
               <p class="title">Compact Car With:</p>
               <ul
-                class="seats d-flex align-items-center justify-content-between fw-bold pb-1"
+                class="seats d-flex align-items-center justify-content-around fw-bold pb-1"
               >
                 <li>5 Seats</li>
                 <li>4 Doors</li>
@@ -52,12 +55,12 @@
               class="car-footer d-flex align-items-center justify-content-between"
             >
               <img
-                class="img-fluid"
+                class="img-fluid ms-3"
                 src="https://cdn2.rcstatic.com/images/suppliers/wrp/flat/17_logo_lrg.gif"
                 alt=""
               />
               <div>
-                <a (click)="toggleDetail()" href="#">Car details</a>
+                <p (click)="toggleDetail()">Car details</p>
               </div>
             </div>
           </div>
@@ -82,24 +85,17 @@
                   <p>10:00 AM Saturday 10 September, 2022</p>
                   <p class="address">Cairo Airport, Egypt</p>
                 </div>
-                <!-- <div>
-                  <i class="pencil-edit-icon"></i>
-                  <a href="#">Change</a>
-                </div> -->
               </div>
             </div>
             <div class="extras d-flex justify-content-between">
               <div class="drop d-flex">
                 <div class="title">Extras</div>
                 <div class="dropdown ms-3">
-                  <button
-                    (click)="toggleDropdown()"
-                    class="btn btn-sm rounded-pill button"
-                  >
+                  <a class="btn btn-sm rounded-pill button mb-1">
                     1 extra selected
                     <i class="extras-drop-link__arrow"></i>
-                  </button>
-                  <div *ngIf="dropdownVisibility" class="dropdown-content">
+                  </a>
+                  <div class="dropdown-content">
                     <p class="fw-bold pt-2 ps-3">payable today:</p>
                     <p class="ps-3">Full Protection</p>
                   </div>
