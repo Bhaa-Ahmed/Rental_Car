@@ -1,0 +1,41 @@
+.links {
+  background-color: #fff;
+  border-radius: 0;
+  margin: 10px 0;
+  padding: 0px;
+  line-height: 1.4;
+  font-size: 14px;
+}
+.links .title {
+  font-weight: bold;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+.links .content {
+  padding: 15px;
+}
+.links .content li {
+  font-size: 13px;
+}
+.links .content li:not(:first-child) {
+  margin-top: 0.5em;
+}
+.links .content a {
+  color: #565656;
+}
+.links .content a::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 14px;
+  height: 14px;
+  margin-left: 5px;
+  background: url(https://cdn2.rcstatic.com/images/site_graphics/newsite/checkout/modal-icons.png)
+    no-repeat -20px 0;
+  background-image: url(https://cdn2.rcstatic.com/images/site_graphics/newsite/checkout/modal-icons.svg),
+    none;
+  margin-top: -2px;
+}
+.links .content li a:hover {
+  text-decoration: none;
+}

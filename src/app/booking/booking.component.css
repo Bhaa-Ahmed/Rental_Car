@@ -1,0 +1,197 @@
+.booking {
+  background-color: white;
+  border-radius: 6px;
+}
+.booking .box-header {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-bottom: 0;
+}
+.booking .box-header .car {
+  padding: 0;
+  border-width: 0;
+  min-width: 250px;
+  max-width: 250px;
+  *width: 250px;
+  margin-right: 15px;
+  padding-right: 15px;
+  overflow: hidden;
+  position: relative;
+}
+.booking .box-header .car .car-type span {
+  font-size: 12px;
+  margin: 5px 0 0 0;
+  color: #888;
+}
+.booking .box-header .car .car-specs {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  padding: 0 5px;
+  top: 55px;
+  min-width: 300px;
+  height: 160px;
+  font-size: 12px;
+  line-height: 18px;
+}
+.booking .box-header .car .car-specs .trans-air i {
+  color: #0f9354;
+  font-size: 20px;
+}
+.booking .box-header .image {
+  height: 165px;
+  min-width: 250px;
+}
+.booking .box-header .car-footer {
+  max-height: 40px;
+}
+.booking .box-header .car-footer img {
+  height: 40px;
+}
+.booking .box-header .car-footer a {
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.booking .box-header .details {
+  padding-left: 15px;
+  border-left: 1px solid #ddd;
+}
+.booking .box-header .details .description {
+  padding-top: 0;
+  margin-top: 4px;
+}
+.booking .box-header .details .description .pick-up {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.booking .box-header .details .description p {
+  margin: 0;
+}
+.booking .box-header .details .description .title {
+  font-weight: bold;
+  color: #0f6193;
+}
+.booking .box-header .details .description .address {
+  font-weight: bold;
+  border-bottom: 1px dashed black;
+}
+.booking .box-header .details .description a {
+  font-size: 12px;
+  margin-right: 5px;
+}
+.booking .box-header .details .description .drop-off {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.booking .box-header .details .extras .title {
+  font-weight: bold;
+}
+.booking .box-header .details .extras {
+  position: relative;
+}
+.booking .box-header .details .extras .button {
+  color: #106092;
+  position: relative;
+  background-color: #e7eff4;
+  border-color: #106092;
+  font-size: 12px;
+  padding: 4px 8px;
+}
+.extras-drop-link__arrow {
+  transition: transform 0.2s;
+  width: 10px;
+  height: 5px;
+  margin-left: 8px;
+  display: inline-block;
+  background: url(https://cdn2.rcstatic.com/images/site_graphics/newsite/checkout/extras-drop-arrow.png)
+    0 0 no-repeat;
+  background-image: url(https://cdn2.rcstatic.com/images/site_graphics/newsite/checkout/extras-drop-arrow.svg),
+    none;
+}
+.booking .box-header .details .extras .dropdown-content {
+  position: absolute;
+  top: 35px;
+  left: -35px;
+  font-size: 12px;
+  min-width: 260px;
+  border-radius: 3px;
+  border: 1px solid;
+  border-color: #cccccc #c2c2c2 #b8b8b8;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 26%);
+  color: #444;
+  padding: 5px 15px 15px;
+  background-color: rgb(255, 255, 255);
+}
+.booking .box-header .details .extras .dropdown-content::before {
+  content: "";
+  border: 8px solid transparent;
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: -15px;
+  right: 175px;
+  border-bottom-color: rgb(255, 255, 255);
+}
+.booking .box-header .details .extras .dropdown-content::after {
+  content: "";
+  border: 8px solid transparent;
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: -15px;
+  right: 175px;
+  border-bottom-color: #c2c2c2;
+}
+.booking .box-header .details .extras a {
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.booking .box-footer {
+  color: #222;
+  margin-bottom: 15px;
+}
+.booking .box-footer .box-footer-content {
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #fcfdff;
+}
+.booking .box-footer .box-footer-content .list {
+  font-size: 13px;
+  line-height: 1.4;
+}
+.booking .box-footer .box-footer-content ul li {
+  border: 0;
+  background-color: white;
+  margin-top: 5px;
+}
+.list-icon {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  display: table-cell;
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+}
+.list-icon--fuel {
+  background-image: url(https://cdn2.rcstatic.com/images/site_graphics/newsite/tone/fuel.svg);
+}
+.booking .box-footer .box-footer-content ul li span {
+  padding-left: 15px;
+}
+
+.pencil-edit-icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 13px;
+  height: 13px;
+  margin-right: 2px;
+  margin-top: -2px;
+  background: url(https://cdn2.rcstatic.com/images/site_graphics/newsite/checkout/edit-pencil.png)
+    0 0 no-repeat;
+  background-image: url(https://cdn2.rcstatic.com/images/site_graphics/newsite/checkout/edit-pencil.svg),
+    none;
+}

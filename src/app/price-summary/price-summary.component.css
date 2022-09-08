@@ -1,0 +1,61 @@
+.price-summary {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+.price-header {
+  border-bottom: 1px dashed #ddd;
+  padding: 10px;
+}
+.price-header .title {
+  font-weight: 700;
+  color: #035eb9;
+}
+.price-summary .price-content .price {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.price-summary .price-content .price li {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+.price-summary .price-content .price li p {
+  cursor: pointer;
+  margin: 0;
+}
+.price-summary .price-content .price li:first-child p {
+  border-bottom: 1px dashed #444444;
+}
+.price-summary .price-content .price li span {
+  font-weight: bold;
+}
+.price-summary .price-content .total {
+  background-color: #1b65a4;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px 10px;
+  margin-top: 7px;
+}
+.price-summary .price-content .total p {
+  margin: 0;
+}
+
+.message {
+  margin: 0 10px;
+  color: #035eb9;
+  font-weight: bold;
+}
+.message p {
+  margin: 0;
+  padding-left: 3px;
+}
+.message i {
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: url(https://cdn2.rcstatic.com/images/site_graphics/newsite/ico-tick-blue.png)
+    no-repeat center;
+}

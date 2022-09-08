@@ -1,0 +1,29 @@
+.payment-details {
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.payment-details .title {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 6px;
+  margin-bottom: 8px;
+}
+.payment-details .plans {
+  background-color: #bee2f7;
+  padding: 10px;
+}
+.payment-details .plans i {
+  font-size: 40px;
+  color: #035eb9;
+}
+.payment-details .plans .text {
+  margin-left: 15px;
+}
+.payment-details .plans .text p {
+  margin: 0;
+}
+.payment-details .plans .text .head {
+  font-weight: bold;
+  color: #035eb9;
+}

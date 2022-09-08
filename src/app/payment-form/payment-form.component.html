@@ -1,0 +1,73 @@
+<span class="required-fields"><span>*</span> The final details we need</span>
+<div class="methods d-flex mt-5">
+  <p class="text">Payment Method</p>
+  <div class="brands">
+    <img class="img-fluid me-3" src="./../../assets/visa logo.png" alt="visa" />
+    <img src="./../../assets/master card logo.png" alt="master-card" />
+    <p class="mb-1">We accept all major payment types</p>
+  </div>
+</div>
+<form [formGroup]="paymentForm">
+  <div class="d-flex ali align-items-center justify-content-center mb-3">
+    <label class="form-label me-3" for="">*&nbsp;Name on Card</label>
+    <input class="form-control name-input" type="text" formControlName="name" />
+  </div>
+  <div class="d-flex ali align-items-center justify-content-center mb-3">
+    <label class="form-label me-3" for="">*&nbsp;Card Number</label>
+    <input
+      class="form-control name-input ms-1"
+      type="number"
+      formControlName="cardNumber"
+    />
+  </div>
+  <div class="d-flex ali align-items-center mb-3">
+    <label class="form-label expiry-label" for=""
+      >*&nbsp;Expiry Date (mm/yy)</label
+    >
+    <select
+      class="form-select expiry-input expiry-input-first"
+      formArrayName="expiryDate"
+    >
+      <option value=""></option>
+      <option value="01">01</option>
+      <option value="02">02</option>
+      <option value="03">03</option>
+      <option value="04">04</option>
+      <option value="05">05</option>
+      <option value="06">06</option>
+      <option value="07">07</option>
+      <option value="08">08</option>
+      <option value="09">09</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+    </select>
+    <select
+      class="form-select expiry-input expiry-input-second"
+      formArrayName="expiryDate"
+    >
+      <option value=""></option>
+      <option value="22">22</option>
+      <option value="23">23</option>
+      <option value="24">24</option>
+      <option value="25">25</option>
+      <option value="26">26</option>
+      <option value="27">27</option>
+      <option value="28">28</option>
+      <option value="29">29</option>
+      <option value="30">30</option>
+      <option value="31">31</option>
+      <option value="32">32</option>
+    </select>
+  </div>
+  <div class="d-flex ali align-items-center mb-3">
+    <label class="form-label security-label" for=""
+      >*&nbsp;Security Number</label
+    >
+    <input
+      class="form-control security-input"
+      type="number"
+      formControlName="securityNumber"
+    />
+  </div>
+</form>

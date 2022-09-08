@@ -1,0 +1,37 @@
+.notification {
+  background-color: #e7f4ed;
+  color: #0f9354;
+  border-left: 7px solid #0f9354;
+  margin-bottom: 15px;
+  position: relative;
+}
+.notification i {
+  content: "";
+  height: 35px;
+  width: 35px;
+  background-image: url(https://cdn2.rcstatic.com/images/site_graphics/newsite/present-banner--salem.svg),
+    none;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+}
+.notification p {
+  margin: 5px 0 0 0;
+}
+.notification ul {
+  margin-left: 15px;
+}
+.notification ul li i {
+  color: #0f9354;
+  font-size: 14px;
+  margin: 0 5px;
+}
+.notification ul li a {
+  color: black;
+  text-decoration: none;
+}
+/* .notification ul li a::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background-image: ;
+} */

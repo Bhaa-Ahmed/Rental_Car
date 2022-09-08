@@ -1,0 +1,45 @@
+.required-fields {
+  float: right;
+  padding: 6px 8px;
+  margin-bottom: 6px;
+  background-color: #e3eed9;
+  font-size: 12px;
+  border-radius: 3px;
+  color: #355832;
+}
+/* .methods .text {
+  margin-left: 248px;
+}
+.methods .brands {
+  margin-left: 15px;
+} */
+.methods img {
+  width: 40px;
+  height: 26px;
+  border: 1px solid rgb(210, 207, 207);
+  border-radius: 5px;
+}
+form input,
+form select {
+  background-color: #f8f8f8;
+}
+form .name-input {
+  max-width: 300px;
+}
+form .expiry-label {
+  margin-left: 210px;
+}
+form .expiry-input {
+  max-width: 70px;
+}
+form .expiry-input {
+  margin-left: 17px;
+}
+form .security-label {
+  margin-left: 240px;
+}
+
+form .security-input {
+  max-width: 90px;
+  margin-left: 10px;
+}

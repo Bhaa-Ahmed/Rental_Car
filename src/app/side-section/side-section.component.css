@@ -1,0 +1,44 @@
+.side-section {
+  font-size: 14px;
+  color: #222;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+.content {
+  padding: 15px;
+  background-color: white;
+  border: 1px solid #ddd;
+}
+.content-head {
+  max-height: 40px;
+  margin-bottom: 20px;
+}
+.content-head img {
+  height: 40px;
+}
+
+.content-body ul li {
+  position: relative;
+  height: 50px;
+  width: 114px;
+  border: 1px solid #106092;
+  border-bottom: 3px solid #106092;
+  border-radius: 3px;
+}
+.content-body ul li img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.content-body .main-content {
+  font-size: 14px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.content-body .main-content p {
+  color: #565656;
+  font-weight: 400;
+  margin: 0;
+}
